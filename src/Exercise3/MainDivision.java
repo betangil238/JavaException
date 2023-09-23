@@ -2,7 +2,7 @@ package Exercise3;
 
 import java.util.Scanner;
 
-public class Main {
+public class MainDivision {
 //	Defina una clase llamada DivisionNumero. En el método main utilice un Scanner para leer dos
 //	números en forma de cadena. A continuación, utilice el método parseInt() de la clase Integer,
 //	para convertir las cadenas al tipo int y guardarlas en dos variables de tipo int. Por ultimo realizar
@@ -22,6 +22,7 @@ public class Main {
 			System.out.println("La division es: "+ numero);
 		}catch (Exception e) {
 			System.out.println("No es posible dividir por cero");
+			System.out.println(e.fillInStackTrace());
 		}finally {
 			division.setNum2(1);
 			System.out.println("La division es: "+ (division.getNum1()/division.getNum2()));
